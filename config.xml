@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--this is a config file.You can edit this file to support more blogs.-->
 <config>
 	<blog>
 		<name>sina</name>
