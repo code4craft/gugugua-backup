@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<blog>
+		<name>sina</name>
+		<title><![CDATA[<h2[^<>]+class="titName SG_txta"[^<>]+>([^<>]+)<]]></title>
+		<content><![CDATA[<!-- 正文开始 -->.*?<!-- 正文结束 -->]]></content>
+		<list><![CDATA[http://blog\.sina\.com\.cn/s/articlelist_[username][\d_]+\.html]]></list>
+		<post><![CDATA[http://blog\.sina\.com\.cn/s/blog_\w+\.html]]></post>
+	</blog>
+	<blog>
+		<name>diandian</name>
+		<title><![CDATA[<h2[^<>]+class="titName SG_txta"[^<>]+>([^<>]+)<]]></title>
+		<content><![CDATA[<!-- 正文开始 -->.*?<!-- 正文结束 -->]]></content>
+		<list><![CDATA[http://[\w+\-]+\.diandian\.com/page/\d+]]></list>
+		<post><![CDATA[http://[\w+\-]+\.diandian\.com/post/[^"'#]+]]></post>
+	</blog>
+</config>
