@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gugugua</groupId>
+  <artifactId>gugugua-backup</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>gugugua-backup</name>
+  <description>gugugua is a tool to backup blog</description>
+  <dependencies>
+	
+  	<dependency>
+  		<groupId>org.codehaus.groovy.maven.runtime</groupId>
+  		<artifactId>gmaven-runtime-default</artifactId>
+  		<version>1.0-rc-3</version>
+  	</dependency>
+  </dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.gmaven</groupId>
+            <artifactId>gmaven-plugin</artifactId>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>generateStubs</goal>
+                        <goal>compile</goal>
+                        <goal>generateTestStubs</goal>
+                        <goal>testCompile</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+</project>
